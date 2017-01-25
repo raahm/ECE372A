@@ -4,7 +4,7 @@ Date: <br>
 Project Name: lab0-part2
 
 # Description
-In this lab, you will build on lab0-part1 by controlling external LEDs with an external switch. Using a state machine implementation (a switch statement in the while loop) you will switch LEDs after a switch has been pressed and released.
+In this lab, you will build on lab0-part1 by controlling external LEDs with an external switch. Using a state machine implementation (a switch statement in the while loop) you will switch LEDs after a switch has been *pressed and released.*
 
 ## Expected Outcome
 ![Demo CountPages alpha](https://storage.googleapis.com/ece-gitlab/lab0p1.gif)
