@@ -13,6 +13,9 @@
  * assignment.
  */
 void initLED(){
+  DDRB |= (1 << DDB4);
+  DDRB |= (1 << DDB5);
+  DDRB |= (1 << DDB6);
   testLED();
 }
 
@@ -23,6 +26,27 @@ void initLED(){
  * to which LED, but this mapping should be matching the testLED function.
  */
 void turnOnLED(int led){
+  PORTB &= (0 << PORTB4);
+  PORTB &= (0 << PORTB5);
+  PORTB &= (0 << PORTB6);
+
+  // if(led == 0)
+  //   PORTB |= (1 << PORTB6);
+  // else if (led == 1)
+  //   PORTB |= (1 << PORTB5);
+  // else
+  //   PORTB |= (1 << PORTB4);
+  switch(led) {
+    case 0:
+      PORTB |= (1 << PORTB6);
+      break;
+    case 1:
+      PORTB |= (1 << PORTB5);
+      break;
+    case 2:
+      PORTB |= (1 << PORTB4);
+      break;
+  }
 
 }
 
